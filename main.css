@@ -4,6 +4,11 @@ body {
 
 #product-overwiew {
     background: #ff1b68;
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    margin: 20px;
 }
 
 .section-title {
@@ -15,6 +20,6 @@ body {
     font-family: 'Anton', sans-serif;
 }
 
-h1 {
+/* h1 {
     font-family: sans-serif;
-}
+} */
