@@ -29,6 +29,10 @@ body {
     padding: 8px 16px;
 }
 
+.main-nav__item {
+    display: inline-block;
+}
+
 /* h1 {
     font-family: sans-serif;
 } */
