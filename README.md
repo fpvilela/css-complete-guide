@@ -1,4 +1,4 @@
-# Resumo da aula
+# Resumo das aulas
 
 - Não podemos deifinir uma margem superior e inferior nos elementos in-line. Motivo pelo qual é importante alterarmos o display quando necessaŕio.
 
@@ -19,3 +19,35 @@ Um exemplo de pseudo element:
     content: " (Link)";
     color: red;
 }
+```
+### Section 3: Properties Worth to Remember & wrap up
+
+```
+selector {
+    property: value;
+}
+```
+
+- Quais propriedades foram usadas?
+    color:
+    background-color:
+    display:
+    padding:
+    padding:
+    border:
+    margin:
+    width:
+    height:
+
+- O que foi aprendido neste módulo?
+    - Modelo de caixa: 
+        Cada elemento é tratado como uma caixa, não importa se é elemento, linha ou bloco, é tratado como uma caixa. Com excessão dos elementos inline;
+    - Largura e altura:
+        - px ou % (ou outras unidades)
+        - %
+        - width e height
+        - box-sizing, content-box (padrão) ou border-box
+    - Propriedade display:
+        Podemos alterar o comportamento de elementos de nível de bloco ou elementos em linha;
+    - Pseudo classes e elementos:
+        É possível estilizar diferentes estdados de um elemento ou segmentar diferentes tipos de elementos ;
