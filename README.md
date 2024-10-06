@@ -60,3 +60,14 @@ selector {
     São reutilizaveis, podemos adiciona-las a qualquer elemento HTML que deve ter um determinado estilo, nos permitindo apenas marcar e nomear as coisas apenas para fim de estilo.
 - CSS ID Selectors:
     Para usa o ID, deve haver um motivo especial, e não porque deseja apenas adicionar um estilo. Veja: [aqui](index.html#intro).
+
+## Section 4: 
+
+A pseudo-classe :not() nos permite reverter uma determinada regra ou excluir ou excluir determinado selector.
+
+Exemplo:
+```
+a:not(.active) {
+    color: blue;
+}
+```
