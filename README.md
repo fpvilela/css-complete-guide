@@ -53,3 +53,10 @@ selector {
         Podemos alterar o comportamento de elementos de nível de bloco ou elementos em linha;
     - Pseudo classes e elementos:
         É possível estilizar diferentes estdados de um elemento ou segmentar diferentes tipos de elementos;
+
+## Section 4: CSS Class Selectors vs ID Selectors
+
+- CSS Class Selectors:
+    São reutilizaveis, podemos adiciona-las a qualquer elemento HTML que deve ter um determinado estilo, nos permitindo apenas marcar e nomear as coisas apenas para fim de estilo.
+- CSS ID Selectors:
+    Para usa o ID, deve haver um motivo especial, e não porque deseja apenas adicionar um estilo. Veja: [aqui](index.html#intro).
