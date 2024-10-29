@@ -71,3 +71,16 @@ a:not(.active) {
     color: blue;
 }
 ```
+
+## Section 5: Understanding outlines
+
+Em alguns caso, é possível que um contorno azul seja adicionado à um elemento quando o mesmo recebe um foco em determinado momento. (seja ao clicar ou navegar com a tecla "Tab").
+
+Neste caso, podemos usar o pseudo elemento :focus, que é um estado aplicado aos elementos quando eles são focados, como ao clicar em um botão ou campo de entrada. E para remover ou customizar esse contorno, você pode usar a propriedade outline.
+
+Exemplo:
+```
+.button:focus {
+    outline: none;
+}
+```
