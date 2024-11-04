@@ -84,3 +84,28 @@ Exemplo:
     outline: none;
 }
 ```
+
+## Section 5: Adding "float" to aour packages
+
+Float significa que você pode sobrescrever o posicionamento padrão e diz ao navegador para empurrar um elemento para a esquerda ou para a direita da página. Ou seja, podemos tira-lo do fluxo de documentos, é também por isso que não estamos usando floats porque raramente queremos isso.
+
+O float é ótimo para posicionar uma imagem em texto e garantir que o texto flua pela imagem, mas não é tão bom para posicionar elementos em nível de bloco. Temos proriedade melhores como flex box...
+
+Então o que fazer se quisermos posicionar um elemento de nível de bloco usando o float sem prejucar todo o documento?
+R: Precisamos manter o espaço reservado e dizer aos outros elementos de nível de bloco que vêm depois, que eles não devem respeitar nenhuma flutuação anterior, através de um pequeno hack.
+
+Bom...mais um motivo pelo qual não usamos o float para posicionar mais.
+
+Para concertar isto, adicionamos uma div logo após o elemento que contém o float no CSS. E nele, adicionamos a propriedade "clear:both".
+
+Exemplo no HTML:
+```
+<div class="clearfix"></div>
+```
+Exemplo no CSS
+```
+.clearfix {
+    clear:both;
+}
+```
+Isso significa que quaisquer elementos que vierem depois desse elemento ou de um elemento com essa classe, não respeitarão floats anteriores.
