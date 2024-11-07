@@ -109,3 +109,16 @@ Exemplo no CSS
 }
 ```
 Isso significa que quaisquer elementos que vierem depois desse elemento ou de um elemento com essa classe, não respeitarão floats anteriores.
+
+## Section 6: Understanding Position - The Theory
+
+Os elementos HTML de nível de bloco, como as "div", normalmente seguem o fluxo do documento. Isso significa que eles ocupam o espaço disponível na linha e são exibidos um após o outro, um abaixo do outro. Esse é o comportamento padrão, que é gerenciado pela propriedade position. Por padrão, a propriedade tem o valor static, o que faz com que os elementos sigam esse fluxo normal sem alterações.
+
+No entanto, em alguns casos, a gente pode querer mudar o comportamento dos elementos e colocar eles em posições diferentes na página. Para isso, é necessário mudar o valor da propriedade position para algo diferente de static. Existem quatro valores principais para isso: absolute, relative, fixed e sticky.
+
+- absolute: Posiciona o elemento em relação ao seu elemento pai com posicionamento relativo (ou ao elemento raiz, se nenhum pai posicionado for encontrado).
+- relative: Posiciona o elemento em relação à sua posição original, movendo-o dentro do fluxo de documentos.
+= fixed: O elemento é posicionado em relação à janela de visualização (viewport), e permanece fixo durante o rolar da página.
+- sticky: O elemento fica fixo em uma posição quando atinge um determinado ponto de rolagem, mas continua se movendo até atingir a parte superior ou inferior da viewport.
+
+Depois de definir a propriedade position para algo diferente de static, a gente pode usar as propriedades top, right, bottom e left para ajustar a posição do elemento. Essas propriedades dizem onde exatamente o elemento vai ser colocado em relação ao seu novo contexto de posicionamento. Por exemplo, se eu definir top: 20px, isso vai mover o elemento 20 pixels para baixo, a partir da posição inicial do seu contexto de posicionamento, seja ele o pai, o elemento raiz ou a viewport.
