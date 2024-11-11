@@ -122,3 +122,13 @@ No entanto, em alguns casos, a gente pode querer mudar o comportamento dos eleme
 - sticky: O elemento fica fixo em uma posição quando atinge um determinado ponto de rolagem, mas continua se movendo até atingir a parte superior ou inferior da viewport.
 
 Depois de definir a propriedade position para algo diferente de static, a gente pode usar as propriedades top, right, bottom e left para ajustar a posição do elemento. Essas propriedades dizem onde exatamente o elemento vai ser colocado em relação ao seu novo contexto de posicionamento. Por exemplo, se eu definir top: 20px, isso vai mover o elemento 20 pixels para baixo, a partir da posição inicial do seu contexto de posicionamento, seja ele o pai, o elemento raiz ou a viewport.
+
+## Section 6: Diving Deeper into Relative Positioning
+
+- position: relative permite mover um elemento em relação à sua posição original, sem retirá-lo do fluxo de documentos.
+
+- Usar top, left, right e bottom com relative apenas move o elemento dentro de sua área de layout, sem afetar outros elementos ao seu redor.
+
+- Ao contrário de position: absolute ou position: fixed, o position: relative não retira o elemento do fluxo e não muda a posição de outros elementos na página.
+
+- É importante lembrar que, ao mover um elemento de maneira extrema (como 300px), ele pode ultrapassar os limites do seu elemento pai, o que pode causar problemas de layout.
