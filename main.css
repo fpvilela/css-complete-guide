@@ -4,7 +4,6 @@ html {
     border: 5px solid white;
     margin: 15px;
     height: 2000px;
-    overflow: auto; /*or overflow: hidden*/
 }
 
 body {
@@ -12,19 +11,26 @@ body {
     padding: 20px;
     border: 5px solid black;
     margin: 0;
-    overflow: hidden;
   }
   
 .parent {
     background: white;
     padding: 20px;
     border: 5px solid black;
-    margin: 0;
-    position: relative;
-    top: 200px;
+    margin: 10px;
   }
+
+.parent .country {
+    background: #fa923f;
+    color: white;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+    position: sticky; /*PRINCIPAL PART!*/
+    top: 0px
+}
   
-.parent div {
+.parent .cities {
     background: rgb(105, 105, 109);
     color: white;
     padding: 10px;
