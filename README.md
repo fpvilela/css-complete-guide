@@ -145,3 +145,15 @@ Isso acontece devido ao comportamento padrão do CSS, onde, se você aplicar "ov
 Para resolver esse problema, é necessário aplicar a propriedade overflow tanto ao elemento html quanto ao elemento body. Isso garante que o overflow seja ocultado corretamente, impedindo que o conteúdo ultrapasse os limites da página.
 
 PS: Ao invés de "overflow: hidden"", você pode usar overflow: auto. Quando você usa "overflow: auto", o conteúdo que ultrapassar os limites do container exibirá uma barra de rolagem, permitindo ao usuário visualizar o conteúdo adicional. Esse comportamento é útil quando você não quer esconder o conteúdo, mas deseja dar ao usuário a possibilidade de rolar.
+
+## Section 6: Useful Resourses & Links
+
+- Positioning theory: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning
+
+- More about the "position" property: https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+- The z-index: https://developer.mozilla.org/en-US/docs/Web/CSS/z-index
+
+- The Stacking Context: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
+
+- The "sticky" value and current browser support: https://caniuse.com/#search=sticky
