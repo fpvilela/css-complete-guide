@@ -132,3 +132,16 @@ Depois de definir a propriedade position para algo diferente de static, a gente 
 - Ao contrário de position: absolute ou position: fixed, o position: relative não retira o elemento do fluxo e não muda a posição de outros elementos na página.
 
 - É importante lembrar que, ao mover um elemento de maneira extrema (como 300px), ele pode ultrapassar os limites do seu elemento pai, o que pode causar problemas de layout.
+
+## Section 6: Working with "overflow" and Relative Positioning
+
+Quando você aplica "position: relative" a um elemento, ele pode se mover para fora do seu container, dependendo dos valores de top, left, right e bottom.
+
+Uma maneira de resolver esse problema é usando a propriedade "overflow: hidden" no elemento pai. Ao aplicar "overflow: hidden", qualquer conteúdo que ultrapasse os limites do pai será ocultado, o que impede o elemento de sair da área visível do container.
+
+Mas quando o "overflow: hidden" é aplicado no body, o comportamento não ocorre como esperado.
+Isso acontece devido ao comportamento padrão do CSS, onde, se você aplicar "overflow: hidden" ao elemento body, a declaração é "passada" para o elemento html, o que não afeta o layout do body da maneira que esperamos.
+
+Para resolver esse problema, é necessário aplicar a propriedade overflow tanto ao elemento html quanto ao elemento body. Isso garante que o overflow seja ocultado corretamente, impedindo que o conteúdo ultrapasse os limites da página.
+
+PS: Ao invés de "overflow: hidden"", você pode usar overflow: auto. Quando você usa "overflow: auto", o conteúdo que ultrapassar os limites do container exibirá uma barra de rolagem, permitindo ao usuário visualizar o conteúdo adicional. Esse comportamento é útil quando você não quer esconder o conteúdo, mas deseja dar ao usuário a possibilidade de rolar.
