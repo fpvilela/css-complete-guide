@@ -2,19 +2,19 @@
 
 ## Section 3: Understanding the display property
 
-- Não podemos deifinir uma margem superior e inferior nos elementos in-line. Motivo pelo qual é importante alterarmos o display quando necessaŕio.
+- We cannot define a top and bottom margin on inline elements. That is why it is important to change the display when necessary.
 
-- Mudar um elemento que é in-line para block nem sempre é muito bom. Pq um determinado elemento in-line é assim por uma boa razão. Motivo pelo qual adicionamos a propriedade display não na âncora neste caso, mas sim no elemento <li> ([ver linha 32 do main.css](https://github.com/Filipe-vilela-felix/css-complete-guide/blob/main/main.css#L32))
+- Changing an element that is inline to block is not always a good idea. Because a certain inline element is like that for a good reason. That is why we added the display property not to the anchor in this case, but to the <li> element ([see line 32 of main.css](https://github.com/Filipe-vilela-felix/css-complete-guide/blob/main/main.css#L32))
 
-- Logo em seguida, ao invés de adicionarmos o <display: block>, preferimos adicionar o <display: inline-block>. Pois assim, há uma mistura no comportamento de ambos (in-line e block). Como elemento inline, esses elementos podem ficar próximos uns dos outros, mas ainda se comportam com elementos de nível de bloco quando se trata em definir margens superior e inferior, dentre outros
+- Right after that, instead of adding <display: block>, we prefer to add <display: inline-block>. Because this way, there is a mix in the behavior of both (inline and block). As inline elements, these elements can be close to each other, but they still behave like block-level elements when it comes to defining top and bottom margins, among others.
 
 ## Section 3: Theory Time - Pseudo Classes & Pseudo Elements
 
-- Pseudo Classes: define o estilo de um estado especial de um elemento;
+- Pseudo Classes: defines the style of a special state of an element;
 
-- Pseudo Element: define o estilo de uma parte específica de um elemento;
+- Pseudo Element: defines the style of a specific part of an element;
 
-Um exemplo de pseudo element:
+An example of a pseudo element:
 
 ```css
 .main-nav__item a::after {
@@ -30,7 +30,7 @@ selector {
 }
 ```
 
-- Quais propriedades foram usadas?
+- What properties were used?
     color:
     background-color:
     display:
@@ -41,32 +41,32 @@ selector {
     width:
     height:
 
-- O que foi aprendido neste módulo?
-    - Modelo de caixa: 
-        Cada elemento é tratado como uma caixa, não importa se é elemento, linha ou bloco, é tratado como uma caixa. Com excessão dos elementos inline;
-    - Largura e altura:
-        - px ou % (ou outras unidades)
+- What was learned in this module?
+    - Box model:
+        Each element is treated as a box, no matter if it is an element, line or block, it is treated as a box. With the exception of inline elements;
+    - Width and height:
+        - px or % (or other units)
         - %
         - width e height
-        - box-sizing, content-box (padrão) ou border-box
-    - Propriedade display:
-        Podemos alterar o comportamento de elementos de nível de bloco ou elementos em linha;
-    - Pseudo classes e elementos:
-        É possível estilizar diferentes estdados de um elemento ou segmentar diferentes tipos de elementos;
+        - box-sizing, content-box (default) or border-box
+    - Display property:
+        We can change the behavior of block-level elements or inline elements;
+    - Pseudo classes and elements:
+        It is possible to style different states of an element or target different types of elements;
 
 ## Section 4: CSS Class Selectors vs ID Selectors
 
 - CSS Class Selectors:
-    São reutilizaveis, podemos adiciona-las a qualquer elemento HTML que deve ter um determinado estilo, nos permitindo apenas marcar e nomear as coisas apenas para fim de estilo.
+    These are reusable, we can add them to any HTML element that should have a certain style, allowing us to only mark and name things for styling purposes.
 - CSS ID Selectors:
-    Para usa o ID, deve haver um motivo especial, e não porque deseja apenas adicionar um estilo. Veja: [aqui](index.html#intro).
+    To use the ID, there must be a special reason, and not because you just want to add a style. See: [here](index.html#intro).
 
 ## Section 4: Selecting the opposit with :not()
 
-A pseudo-classe :not() nos permite reverter uma determinada regra ou excluir ou excluir determinado selector.
+The :not() pseudo-class allows us to revert a given rule or exclude or delete a given selector.
 
-Exemplo:
-```
+Example:
+```css
 a:not(.active) {
     color: blue;
 }
@@ -74,12 +74,12 @@ a:not(.active) {
 
 ## Section 5: Understanding outlines
 
-Em alguns caso, é possível que um contorno azul seja adicionado à um elemento quando o mesmo recebe um foco em determinado momento. (seja ao clicar ou navegar com a tecla "Tab").
+In some cases, it is possible to add a blue outline to an element when it receives focus at a given moment (either by clicking or navigating with the "Tab" key).
 
-Neste caso, podemos usar o pseudo elemento :focus, que é um estado aplicado aos elementos quando eles são focados, como ao clicar em um botão ou campo de entrada. E para remover ou customizar esse contorno, você pode usar a propriedade outline.
+In this case, we can use the :focus pseudo-element, which is a state applied to elements when they are focused, such as when clicking a button or input field. And to remove or customize this outline, you can use the outline property.
 
-Exemplo:
-```
+Example :
+```css
 .button:focus {
     outline: none;
 }
@@ -87,64 +87,67 @@ Exemplo:
 
 ## Section 5: Adding "float" to aour packages
 
-Float significa que você pode sobrescrever o posicionamento padrão e diz ao navegador para empurrar um elemento para a esquerda ou para a direita da página. Ou seja, podemos tira-lo do fluxo de documentos, é também por isso que não estamos usando floats porque raramente queremos isso.
+Float means that you can override the default positioning and tell the browser to push an element to the left or right of the page. In other words, you can take it out of the document flow, which is also why we don't use floats because we rarely want to do that.
 
-O float é ótimo para posicionar uma imagem em texto e garantir que o texto flua pela imagem, mas não é tão bom para posicionar elementos em nível de bloco. Temos proriedade melhores como flex box...
+Float is great for positioning an image in text and making sure the text flows around the image, but it's not so good for positioning block-level elements. We have better properties like flex box...
 
-Então o que fazer se quisermos posicionar um elemento de nível de bloco usando o float sem prejucar todo o documento?
-R: Precisamos manter o espaço reservado e dizer aos outros elementos de nível de bloco que vêm depois, que eles não devem respeitar nenhuma flutuação anterior, através de um pequeno hack.
+So what do you do if you want to position a block-level element using float without messing up the entire document?
 
-Bom...mais um motivo pelo qual não usamos o float para posicionar mais.
+A: You need to keep the space reserved and tell the other block-level elements that come after it that they shouldn't respect any previous float, through a little hack.
 
-Para concertar isto, adicionamos uma div logo após o elemento que contém o float no CSS. E nele, adicionamos a propriedade "clear:both".
+Well... yet another reason why we don't use float for positioning anymore.
+
+To fix this, we add a div right after the element that contains the float in the CSS. And on it, we add the "clear:both" property.
 
 Exemplo no HTML:
-```
+```html
 <div class="clearfix"></div>
 ```
 Exemplo no CSS
-```
+```css
 .clearfix {
     clear:both;
 }
 ```
-Isso significa que quaisquer elementos que vierem depois desse elemento ou de um elemento com essa classe, não respeitarão floats anteriores.
+This means that any elements that come after this element or an element with this class will not respect previous floats.
 
 ## Section 6: Understanding Position - The Theory
 
-Os elementos HTML de nível de bloco, como as "div", normalmente seguem o fluxo do documento. Isso significa que eles ocupam o espaço disponível na linha e são exibidos um após o outro, um abaixo do outro. Esse é o comportamento padrão, que é gerenciado pela propriedade position. Por padrão, a propriedade tem o valor static, o que faz com que os elementos sigam esse fluxo normal sem alterações.
+Block-level HTML elements, such as divs, normally follow the flow of the document. This means that they occupy the available space on the line and are displayed one after the other, one below the other. This is the default behavior, which is managed by the position property. By default, the property has the value static, which makes the elements follow this normal flow without changes.
 
-No entanto, em alguns casos, a gente pode querer mudar o comportamento dos elementos e colocar eles em posições diferentes na página. Para isso, é necessário mudar o valor da propriedade position para algo diferente de static. Existem quatro valores principais para isso: absolute, relative, fixed e sticky.
+However, in some cases, we may want to change the behavior of the elements and place them in different positions on the page. To do this, it is necessary to change the value of the position property to something other than static. There are four main values ​​for this: absolute, relative, fixed and sticky.
 
-- absolute: Posiciona o elemento em relação ao seu elemento pai com posicionamento relativo (ou ao elemento raiz, se nenhum pai posicionado for encontrado).
-- relative: Posiciona o elemento em relação à sua posição original, movendo-o dentro do fluxo de documentos.
-= fixed: O elemento é posicionado em relação à janela de visualização (viewport), e permanece fixo durante o rolar da página.
-- sticky: O elemento fica fixo em uma posição quando atinge um determinado ponto de rolagem, mas continua se movendo até atingir a parte superior ou inferior da viewport.
+- absolute: Positions the element relative to its parent element with relative positioning (or to the root element, if no positioned parent is found).
+- relative: Positions the element relative to its original position, moving it within the document flow.
+= fixed: The element is positioned relative to the viewport, and remains fixed as the page scrolls.
 
-Depois de definir a propriedade position para algo diferente de static, a gente pode usar as propriedades top, right, bottom e left para ajustar a posição do elemento. Essas propriedades dizem onde exatamente o elemento vai ser colocado em relação ao seu novo contexto de posicionamento. Por exemplo, se eu definir top: 20px, isso vai mover o elemento 20 pixels para baixo, a partir da posição inicial do seu contexto de posicionamento, seja ele o pai, o elemento raiz ou a viewport.
+- sticky: The element stays in one position when it reaches a certain scroll point, but it keeps moving until it reaches the top or bottom of the viewport.
+
+Once you set the position property to something other than static, you can use the top, right, bottom, and left properties to adjust the position of the element. These properties tell you exactly where the element will be placed in relation to its new positioning context. For example, if I set top: 20px, this will move the element 20 pixels down from the starting position of its positioning context, whether it's the parent, the root element, or the viewport.
 
 ## Section 6: Diving Deeper into Relative Positioning
 
-- position: relative permite mover um elemento em relação à sua posição original, sem retirá-lo do fluxo de documentos.
+- position: relative allows you to move an element relative to its original position, without removing it from the document flow.
 
-- Usar top, left, right e bottom com relative apenas move o elemento dentro de sua área de layout, sem afetar outros elementos ao seu redor.
+- Using top, left, right, and bottom with relative only moves the element within its layout area, without affecting other elements around it.
 
-- Ao contrário de position: absolute ou position: fixed, o position: relative não retira o elemento do fluxo e não muda a posição de outros elementos na página.
+- Unlike position: absolute or position: fixed, position: relative does not remove the element from the flow and does not change the position of other elements on the page.
 
-- É importante lembrar que, ao mover um elemento de maneira extrema (como 300px), ele pode ultrapassar os limites do seu elemento pai, o que pode causar problemas de layout.
+- It is important to remember that when moving an element to an extreme (such as 300px), it can exceed the bounds of its parent element, which can cause layout issues.
 
 ## Section 6: Working with "overflow" and Relative Positioning
 
-Quando você aplica "position: relative" a um elemento, ele pode se mover para fora do seu container, dependendo dos valores de top, left, right e bottom.
+When you apply "position: relative" to an element, it may move outside of its container, depending on the values ​​of top, left, right, and bottom.
 
-Uma maneira de resolver esse problema é usando a propriedade "overflow: hidden" no elemento pai. Ao aplicar "overflow: hidden", qualquer conteúdo que ultrapasse os limites do pai será ocultado, o que impede o elemento de sair da área visível do container.
+One way to solve this problem is by using the "overflow: hidden" property on the parent element. When you apply "overflow: hidden", any content that extends beyond the parent's boundaries will be hidden, preventing the element from moving outside of the visible area of ​​the container.
 
-Mas quando o "overflow: hidden" é aplicado no body, o comportamento não ocorre como esperado.
-Isso acontece devido ao comportamento padrão do CSS, onde, se você aplicar "overflow: hidden" ao elemento body, a declaração é "passada" para o elemento html, o que não afeta o layout do body da maneira que esperamos.
+However, when you apply "overflow: hidden" to the body, the behavior does not occur as expected.
 
-Para resolver esse problema, é necessário aplicar a propriedade overflow tanto ao elemento html quanto ao elemento body. Isso garante que o overflow seja ocultado corretamente, impedindo que o conteúdo ultrapasse os limites da página.
+This is due to the default behavior of CSS, where if you apply "overflow: hidden" to the body element, the declaration is "passed" to the html element, which does not affect the layout of the body in the way we expect.
 
-PS: Ao invés de "overflow: hidden"", você pode usar overflow: auto. Quando você usa "overflow: auto", o conteúdo que ultrapassar os limites do container exibirá uma barra de rolagem, permitindo ao usuário visualizar o conteúdo adicional. Esse comportamento é útil quando você não quer esconder o conteúdo, mas deseja dar ao usuário a possibilidade de rolar.
+To solve this problem, you need to apply the overflow property to both the html element and the body element. This ensures that the overflow is hidden correctly, preventing the content from extending beyond the page boundaries.
+
+PS: Instead of "overflow: hidden", you can use overflow: auto. When you use "overflow: auto", content that overflows the container will display a scroll bar, allowing the user to view additional content. This behavior is useful when you don't want to hide the content, but want to give the user the ability to scroll.
 
 ## Section 6: Useful Resourses & Links
 
