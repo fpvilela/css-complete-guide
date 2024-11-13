@@ -203,3 +203,22 @@ PS: Instead of "overflow: hidden", you can use overflow: auto. When you use "ove
     
     - fixed: The background image will remain fixed while the content scrolls.
     - scroll: The background image will scroll along with the content.
+
+## Section 7: Using the "bakcground" shorthands on our project
+
+The background property is a shorthand way of setting multiple background subproperties in a single line. It can include the background image, position, size, repeat, source, and clip.
+
+A sintaxe para a propriedade background é como segue:
+```
+background: [imagem] [posição] [tamanho] [repetição] [origem] [clip];
+```
+- Image: The URL of the background image.
+- Position: How the image should be positioned (can use values ​​such as pixels or percentages).
+- Size: Sets the size of the image (e.g. cover or contain).
+Repeat: Whether the background image should repeat or not (e.g. no-repeat).
+- Origin: Where the image starts to be positioned (e.g. border-box or padding-box).
+
+When you use the / slash, it separates the position and size properties of the image:
+```css
+background: [imagem] [posição] / [tamanho];
+```
