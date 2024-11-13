@@ -170,3 +170,36 @@ PS: Instead of "overflow: hidden", you can use overflow: auto. When you use "ove
     What happens: 10% refers to the horizontal position and 20% refers to the vertical position. In other words, 10% of the width of the image will be "offset" to the right, and 20% of the height of the image will be "offset" downwards. This can make the image "go up" or "move" depending on the aspect ratio.
 
 - background-position: left 10% bottom 20% -> When we use keywords like left, right, top, and bottom, we are aligning the background image more directly with the edges of the container. A value of 10% on the X axis will offset the image of its container 10% from the left edge (rather than an absolute value like pixels), and a value of 20% on the Y axis will offset the image 20% up from the bottom edge.
+
+## Section 7: The "background" shorthand - theory
+
+1) Background image (```background-image```)
+
+2) Background color (```background-color```)
+
+3) Background position (```background-position```)
+
+4) Background size (```background-size```):
+    - cover: The background image adjusts to cover the entire container area, and can be cropped.
+    - contain: The image is resized to fit completely inside the container.
+
+5) Bckground repeat (```background-repeat```):
+    - no-repeat: The image will not be repeated.
+    - repeat: The image will be repeated horizontally and vertically.
+    - repeat-x: Repeat only in the horizontal direction.
+    - repeat-y: Repeat only in the vertical direction.
+
+6) Bckground origin (```background-origin```):
+
+    Define a área dentro do contêiner onde a imagem de fundo é posicionada, podendo ser ```padding-box```, ```border-box``` ou ```content-box```.
+
+7) Bckground clip (```background-clip```):
+
+    Controla se o plano de fundo deve se estender abaixo de bordas de elementos (como bordas pontilhadas ou tracejadas).
+
+8) Background attachment (```backgroun-attachment```):
+
+    Defines how the background image behaves when the user scrolls the page. It can be fixed or scroll along with the content.
+    
+    - fixed: The background image will remain fixed while the content scrolls.
+    - scroll: The background image will scroll along with the content.
