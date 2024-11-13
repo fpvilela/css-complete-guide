@@ -160,3 +160,14 @@ PS: Instead of "overflow: hidden", you can use overflow: auto. When you use "ove
 - The Stacking Context: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context
 
 - The "sticky" value and current browser support: https://caniuse.com/#search=sticky
+
+## Section 7: Working with "background-position"
+
+- background-position: 20px 30px -> Ao usar pixels, você está definindo a posição exata da imagem de fundo em relação ao contêiner. 20px é o deslocamento da borda esquerda (eixo X) e 30px é o deslocamento da borda superior (eixo Y) do contêiner.
+
+- background-position: 10% 20% -> Ao usar porcentagens, você está dizendo quanto da imagem deve ser "deslocado" dentro do contêiner. Se a imagem for maior que o contêiner, a imagem 
+será "recortada" (cortada) a partir da borda oposta.
+
+    O que acontece: 10% refere-se à posição horizontal e 20% refere-se à posição vertical. Ou seja, 10% da largura da imagem será "deslocada" para a direita, e 20% da altura da imagem será "deslocada" para baixo. Isso pode fazer a imagem "subir" ou "mover-se" dependendo da proporção.
+
+- background-position: left 10% bottom 20% -> Quando usamos palavras-chave como left, right, top e bottom, estamos alinhando a imagem de fundo de forma mais direta em relação às bordas do contêiner. O valor 10% no eixo X vai deslocar a imagem 10% do seu contêiner da borda esquerda (ao invés de um valor absoluto como pixels), e o valor 20% no eixo Y vai deslocar a imagem 20% para cima a partir da borda inferior.
