@@ -163,11 +163,10 @@ PS: Instead of "overflow: hidden", you can use overflow: auto. When you use "ove
 
 ## Section 7: Working with "background-position"
 
-- background-position: 20px 30px -> Ao usar pixels, você está definindo a posição exata da imagem de fundo em relação ao contêiner. 20px é o deslocamento da borda esquerda (eixo X) e 30px é o deslocamento da borda superior (eixo Y) do contêiner.
+- background-position: 20px 30px -> When using pixels, you are defining the exact position of the background image relative to the container. 20px is the offset from the left edge (X axis) and 30px is the offset from the top edge (Y axis) of the container.
 
-- background-position: 10% 20% -> Ao usar porcentagens, você está dizendo quanto da imagem deve ser "deslocado" dentro do contêiner. Se a imagem for maior que o contêiner, a imagem 
-será "recortada" (cortada) a partir da borda oposta.
+- background-position: 10% 20% -> When using percentages, you are saying how much of the image should be "offset" within the container. If the image is larger than the container, the image will be "cropped" (cut off) from the opposite edge.
 
-    O que acontece: 10% refere-se à posição horizontal e 20% refere-se à posição vertical. Ou seja, 10% da largura da imagem será "deslocada" para a direita, e 20% da altura da imagem será "deslocada" para baixo. Isso pode fazer a imagem "subir" ou "mover-se" dependendo da proporção.
+    What happens: 10% refers to the horizontal position and 20% refers to the vertical position. In other words, 10% of the width of the image will be "offset" to the right, and 20% of the height of the image will be "offset" downwards. This can make the image "go up" or "move" depending on the aspect ratio.
 
-- background-position: left 10% bottom 20% -> Quando usamos palavras-chave como left, right, top e bottom, estamos alinhando a imagem de fundo de forma mais direta em relação às bordas do contêiner. O valor 10% no eixo X vai deslocar a imagem 10% do seu contêiner da borda esquerda (ao invés de um valor absoluto como pixels), e o valor 20% no eixo Y vai deslocar a imagem 20% para cima a partir da borda inferior.
+- background-position: left 10% bottom 20% -> When we use keywords like left, right, top, and bottom, we are aligning the background image more directly with the edges of the container. A value of 10% on the X axis will offset the image of its container 10% from the left edge (rather than an absolute value like pixels), and a value of 20% on the Y axis will offset the image 20% up from the bottom edge.
