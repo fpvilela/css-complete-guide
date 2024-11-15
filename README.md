@@ -222,3 +222,11 @@ When you use the / slash, it separates the position and size properties of the i
 ```css
 background: [imagem] [posição] / [tamanho];
 ```
+
+## Section 7: Styling images]
+
+In order for an image to be contained within the "a" (anchor) tag, it must be converted into a block element to respect its original dimensions.
+
+With normal images, the positioning and sizing options are more limited compared to background images.
+
+For more precise image positioning or to create more advanced effects, the use of background images is recommended, although background images are not part of the normal flow of the document, which can harm accessibility.
