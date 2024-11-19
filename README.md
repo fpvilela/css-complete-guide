@@ -269,3 +269,40 @@ The linear-gradient() function can have multiple arguments, but the first one is
 - Gradients can also involve transparency using the rgba() function.
 
 - You can control where each color starts and ends within the gradient by adjusting the percentage or position of each color.
+
+## Section 7: Appling Radial Gradients
+
+The radial gradient function creates a gradient that starts from a center point and spreads outward, rather than going from one edge to the other like linear gradients.
+
+A simple radial gradient can have two colors. By default, the gradient is circular and centered, with the color transition starting in the center and spreading out to the edges.
+
+- Gradient Shape:
+
+    The default is ellipse (not circle), but you can set the gradient shape to circle by changing the first value in the radial-gradient() function.
+
+    For example: circle results in a circular gradient, while ellipse results in an elliptical shape.
+
+- Gradient Position:
+
+    The gradient origin point can be positioned using keywords such as top, bottom, left, right.
+
+    You can also use custom values ​​such as 20% 50% to specify the position on the X and Y axis.
+
+- Gradient Size:
+
+    The size of the gradient can be controlled, for example, by adding a value of 20px after the shape (circle or ellipse). This value defines the diameter of the gradient.
+
+    For the ellipse, you can specify width and height as two values ​​separated by spaces.
+
+- Palavras-chave de Tamanho:
+
+    Você também pode usar palavras-chave como "closest-side" (para o lado mais próximo) e "farthest-side" (para o lado mais distante) para ajustar o tamanho do gradiente, ajustando até onde ele se estende.
+
+- Paradas de Cor:
+
+    Assim como no gradiente linear, você pode definir paradas de cor no gradiente radial. Por exemplo, você pode especificar que a transição entre cores deve ocorrer em 70% da área do gradiente.
+
+Example:
+```CSS
+background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue, green);
+```
