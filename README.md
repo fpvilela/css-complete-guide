@@ -253,3 +253,19 @@ See the example in CSS:
     vertical-align: top; /*or display: block */
   }
 ```
+
+## Section 7: Understanding Linear Grandients
+
+Gradients are treated as images in CSS. This means you can use gradients as a background, just like you would an image.
+
+The linear-gradient() function can have multiple arguments, but the first one is always the direction of the gradient.
+
+- Gradient direction:
+    - Keywords such as to top, to bottom, to left, to right (e.g., to bottom indicates that the gradient goes from top to bottom).
+    - Angles in degrees, such as 30deg for a slanted gradient. An angle of 0deg goes from bottom to top, while 180deg goes from top to bottom.
+
+- You can add multiple colors to a gradient, and they will transition smoothly between each other.
+
+- Gradients can also involve transparency using the rgba() function.
+
+- You can control where each color starts and ends within the gradient by adjusting the percentage or position of each color.
