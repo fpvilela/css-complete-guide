@@ -230,3 +230,26 @@ In order for an image to be contained within the "a" (anchor) tag, it must be co
 With normal images, the positioning and sizing options are more limited compared to background images.
 
 For more precise image positioning or to create more advanced effects, the use of background images is recommended, although background images are not part of the normal flow of the document, which can harm accessibility.
+
+## Section 7: Working on the Image Layout
+
+When we place an image inside a container, the image, being an inline element (i.e. an element that flows with the text, as if it were part of the text), may leave some space below it. This extra space occurs due to the typical behavior of an inline element, which includes the "placeholder" for the text baseline (as if the image were a letter).
+
+There are two solutions for this:
+
+- Use vertical-align: top:
+
+    O vertical-align controla o alinhamento vertical de um elemento inline em relação a outros elementos. Usando top, a imagem será alinhada no topo da linha, o que pode remover o espaço extra abaixo dela.
+
+- Change the image display to block:
+
+    Setting the image to display: block would make the image behave like a block element, i.e. the image will occupy the entire available width, pushing the other elements down (without the inline behavior).
+    This would also remove the white space below the image because, by becoming a block element, the image will no longer be aligned with the text line and, therefore, does not leave this extra space.
+
+See the example in CSS:
+```CSS
+.testimonial__image {
+    width: 100%;
+    vertical-align: top; /*or display: block */
+  }
+```
