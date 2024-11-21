@@ -314,3 +314,20 @@ background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue,
 Filters: https://developer.mozilla.org/en-US/docs/Web/CSS/filter
 
 - Styling SVG: https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/SVG_and_CSS
+
+## Rules to Remember:
+
+**First Rule:** Position: Fixed
+- Containing Block: The viewport.
+- Behavior: When an element has position: fixed, any percentage values ​​applied (such as width or height) will be based on the width and height of the viewport. In other words, the percentage unit refers to the viewport.
+- Example: A navigation bar with a width of 100% will adjust to the width of the viewport, regardless of where it is on the page.
+
+**Second Rule:** position: absolute
+- Containing Block: The closest ancestor that has a position other than static (usually relative).
+- Behavior: When an element has position: absolute, the percentage unit refers to the content of the closest ancestor with relative position, including padding.
+- Example: A tagline with position: absolute and a width of 100% will adjust to the width of its parent with position: relative, not to the viewport.
+
+**Third Rule:** position: static or relative
+- Containing Block: The closest block-level ancestor (such as a div).
+- Behavior: When an element has position: static or relative, the percentage unit refers only to the content of the block-level ancestor, without considering the padding.
+- Example: An image container with position: static or relative and a width of 50% will be based on the content of its block-level parent, not the padding or border.
