@@ -331,3 +331,11 @@ Filters: https://developer.mozilla.org/en-US/docs/Web/CSS/filter
 - Containing Block: The closest block-level ancestor (such as a div).
 - Behavior: When an element has position: static or relative, the percentage unit refers only to the content of the block-level ancestor, without considering the padding.
 - Example: An image container with position: static or relative and a width of 50% will be based on the content of its block-level parent, not the padding or border.
+
+## Working with "rem" & "em"
+
+**"Em" units:** These are relative to the font size of the parent element. For example, if an element's font size is 20px and a subtitle is 2em, the final size of the subtitle will be 40px. This can create a cascading effect, where the value is multiplied as you move down the element hierarchy.
+
+**"Rem" units:** The main difference is that rem units are always relative to the font-size of the root element (HTML). This makes it easier to control layout and fonts, as all values ​​are based on the browser's default font size, providing greater consistency and flexibility. This means that a value of 1rem is equal to the font-size of the root element (usually 16px), and calculations are made from this value.
+
+The core concept is that "rem" offers a more robust and controllable solution for responsive design, allowing greater control over font size and overall layout.
