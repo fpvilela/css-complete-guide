@@ -14,6 +14,7 @@
 
   .testimonial__image-container {
     width: 65%;
+    max-width: 580px;
     display: inline-block;
     vertical-align: middle;
     box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
@@ -21,7 +22,7 @@
 
   .testimonial__image {
     width: 100%;
-    vertical-align: top; /*or display: block */
+    vertical-align: top;
   }
   
   .testimonial__info {
@@ -29,7 +30,7 @@
     padding: 14px;
     display: inline-block;
     vertical-align: middle;
-    width: 20%;
+    width: 30%;
   }
   
   #customer-2.testimonial {
