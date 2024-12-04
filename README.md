@@ -339,3 +339,7 @@ Filters: https://developer.mozilla.org/en-US/docs/Web/CSS/filter
 **"Rem" units:** The main difference is that rem units are always relative to the font-size of the root element (HTML). This makes it easier to control layout and fonts, as all values ​​are based on the browser's default font size, providing greater consistency and flexibility. This means that a value of 1rem is equal to the font-size of the root element (usually 16px), and calculations are made from this value.
 
 The core concept is that "rem" offers a more robust and controllable solution for responsive design, allowing greater control over font size and overall layout.
+
+## Section 9: Manipulating Element Classes
+
+Using the .classList object provides some helper methods, such as checking if it contains a given class. This can be used in "if" statements, to add or remove a class, or even to automatically remove it if it is active or inactive.
