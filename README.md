@@ -349,3 +349,14 @@ Using the .classList object provides some helper methods, such as checking if it
 For a web page to display correctly on mobile devices, it is necessary to add the viewport meta tag in the HTML code, as it allows the browser to adjust the page layout according to the actual width of the device.
 
 The viewport meta tag must have the property "width=device-width", which tells the browser to use the physical width of the device, and "initial-scale=1.0", which defines the initial zoom level. With this, the responsive design begins to work correctly, adapting to the mobile screen.
+
+## Section 10: Understanding the "viewport" Metatag
+
+Adding a "viewport" attribute (e.g. name="viewport") to a meta tag allows us to tell that meta tag that it should target the viewport. So, in effect, the area on our device within our browser should display our website.
+
+The second attribute we add is the content attribute (e.g. content="width=device-width") which we can now set the width of our page.
+
+Example:
+```HTML
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
