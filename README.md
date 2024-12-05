@@ -343,3 +343,9 @@ The core concept is that "rem" offers a more robust and controllable solution fo
 ## Section 9: Manipulating Element Classes
 
 Using the .classList object provides some helper methods, such as checking if it contains a given class. This can be used in "if" statements, to add or remove a class, or even to automatically remove it if it is active or inactive.
+
+## Section 10: Understanding Hardware Pixels vs. Software Pixels
+
+For a web page to display correctly on mobile devices, it is necessary to add the viewport meta tag in the HTML code, as it allows the browser to adjust the page layout according to the actual width of the device.
+
+The viewport meta tag must have the property "width=device-width", which tells the browser to use the physical width of the device, and "initial-scale=1.0", which defines the initial zoom level. With this, the responsive design begins to work correctly, adapting to the mobile screen.
