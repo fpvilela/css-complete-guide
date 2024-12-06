@@ -360,3 +360,13 @@ Example:
 ```HTML
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
+
+## Section 10: Things to Keep in Mind when Working with Media Queries
+
+- When you’re building a responsive website, it’s essential to determine the breaking points where the layout should adjust for different devices. There’s no set formula for this, but you can use the width of common devices as a guide.
+
+- A good practice is to use tools like mydevice.io to compare CSS width and height for popular devices (smartphones and tablets). For example, a breaking point of 768px might be a good starting point for portrait devices (like tablets), while for modern smartphones, a breaking point might be around 300px to 768px.
+
+- Instead of adding too many breakpoints (e.g. 10 media queries), it is recommended to define just a few logical, broad breakpoints that cover the most common device ranges. For example, a breakpoint at 768px for tablets and another at 1000px for larger screens.
+
+- While it is acceptable to add media queries just below CSS rules, a good practice for keeping your code organized is to move them to the end of the file. This makes it easier for other developers to find and modify the media queries if necessary.
