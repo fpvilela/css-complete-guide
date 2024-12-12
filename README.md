@@ -370,3 +370,13 @@ Example:
 - Instead of adding too many breakpoints (e.g. 10 media queries), it is recommended to define just a few logical, broad breakpoints that cover the most common device ranges. For example, a breakpoint at 768px for tablets and another at 1000px for larger screens.
 
 - While it is acceptable to add media queries just below CSS rules, a good practice for keeping your code organized is to move them to the end of the file. This makes it easier for other developers to find and modify the media queries if necessary.
+
+## Section 10: Useful Resources & Links
+
+- Absolute lengths on W3.org: https://www.w3.org/TR/css-values-3/#absolute-lengths
+
+- More about device sizes: https://bjango.com/articles/min-device-pixel-ratio/
+
+- Media queries theory: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries
+
+- Applying media queries: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
