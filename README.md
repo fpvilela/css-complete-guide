@@ -380,3 +380,65 @@ Example:
 - Media queries theory: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries
 
 - Applying media queries: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+
+## Section 11: Understanding Advanced Attribute Selectors
+
+1. **Simple Attribute Selectors:**
+
+    - **Attribute selection:** You can select HTML elements that have a specific attribute. For example, select all ```<input>``` elements that have the attribute type, which could be "email", "password", etc.
+
+    - Example: 
+        ```CSS
+        input[type="email"]
+        ``` 
+        Selects all input fields of type "email", but not those of type "password" or "text".
+
+2. **Attribute List Selection:**
+
+    - **Using the tilde (~) symbol:** If an attribute contains a list of values, you can select elements that have a specific value within that list. For example, if an element's lang attribute contains the values ​​"en-us" and "en-gb", you can use the selector to select any element with "en-us".
+
+    - Example: 
+        ```CSS
+        p[lang~="en-us"] 
+        ```
+        Selects ```<p>``` elements that have "en-us" in the lang attribute, even if it contains other values ​​such as "en-gb".
+
+3. **Attribute Prefix Selection:**
+
+    - **Using the pipe symbol (|):** You can select elements where the value of an attribute begins with a specific word. This is useful for attributes like lang, where you might want to select all elements that have values ​​like "en" (for English, for example).
+
+    - Example: 
+        ```CSS
+        [lang|="en"]
+        ``` 
+        Selects elements with lang values ​​like "en-us", "en-gb", etc.
+
+4. **Selecting by Attribute Suffix:**
+
+    - **Using the dollar sign ($):** This selector allows you to select elements whose attribute value ends with a specific word. This is useful, for example, to select anchor links that have a specific referring URL.
+
+    - Example: 
+        ```CSS
+        [href$=".pdf"]
+        ```
+        Selects all ```<a>``` elements whose href attribute ends with ".pdf".
+
+5. **Substring Selection within an Attribute:**
+
+    - **Using the asterisk (*):** You can select elements whose attribute value contains a specific substring anywhere in the value.
+    
+    - Example:
+        ```CSS
+        [src*="cdn"]
+        ```
+        Selects all elements with the src attribute that contain "cdn" anywhere in the value (useful for selecting images hosted on a CDN).
+
+6. **Case Sensitivity:**
+
+    - **Using the i modifier:** By adding the letter "i" to the end of the attribute selector, you disable case sensitivity, allowing the search to be case insensitive.
+
+    - Example: 
+        ```CSS
+        [src*="cdn" i] 
+        ```
+        Selects all elements that contain "cdn", regardless of whether they are in upper or lower case.
