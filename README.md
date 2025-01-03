@@ -442,3 +442,23 @@ Example:
         [src*="cdn" i] 
         ```
         Selects all elements that contain "cdn", regardless of whether they are in upper or lower case.
+
+## Section 11: Providing Validation Feedback
+
+Creating a client-side validation provides immediate feedback to the user, and can be implemented with:
+
+- **CSS classes:** Added to invalid elements manually or via JavaScript.
+
+- **Pseudo-SAC selectors (:invalid, :valid):** Automatically applied by the browser based on HTML attributes such as type="email" or required.
+
+Stylize invalid elements with borders, colors, or other visual styles.
+
+Use CSS classes as invalid or the pseudo-selector :invalid to apply styles.
+
+Manage style conflicts using specific rules or the !important.
+
+Use HTML attributes as required for basic validations without the need for JavaScript.
+
+For more advanced validations (such as applying styles only after user interaction), use JavaScript to add or remove classes dynamically.
+
+_PS: Check for resource compatibility using documentation such as the Mozilla Developer Network (MDN)._
