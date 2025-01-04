@@ -462,3 +462,9 @@ Use HTML attributes as required for basic validations without the need for JavaS
 For more advanced validations (such as applying styles only after user interaction), use JavaScript to add or remove classes dynamically.
 
 _PS: Check for resource compatibility using documentation such as the Mozilla Developer Network (MDN)._
+
+## Section 11: Useful Resourses & Links
+
+- Styling Form Elements: https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Styling_HTML_forms
+
+- Styling a ``<select>``  Element: https://stackoverflow.com/questions/1895476/how-to-style-a-select-dropdown-with-css-only-without-javascript
