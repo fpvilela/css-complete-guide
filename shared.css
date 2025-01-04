@@ -211,6 +211,12 @@ main {
   outline: none;
 }
 
+.button[disabled] {
+  cursor: not-allowed;
+  border: #a1a1a1;
+  background: #ccc;
+}
+
 .open {
     display: block !important;
 }
