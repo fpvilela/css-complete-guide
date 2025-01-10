@@ -468,3 +468,9 @@ _PS: Check for resource compatibility using documentation such as the Mozilla De
 - Styling Form Elements: https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Styling_HTML_forms
 
 - Styling a ``<select>``  Element: https://stackoverflow.com/questions/1895476/how-to-style-a-select-dropdown-with-css-only-without-javascript
+
+## Section 12: Comparing Generic Families & Font Families
+
+**Generic Families** they are broad groups that define general characteristics of the sources. They are like categories that share certain visual attributes. There are 5 main generic families: _Serif, Sans-serif, Cursive, Monospace, Fantasy_
+
+**Font Families** these are specific groups of sources that belong to a generic family. Like for example: _Em Serif -> Times New Roman, Georgia, etc._
