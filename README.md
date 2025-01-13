@@ -474,3 +474,13 @@ _PS: Check for resource compatibility using documentation such as the Mozilla De
 **Generic Families** they are broad groups that define general characteristics of the sources. They are like categories that share certain visual attributes. There are 5 main generic families: _Serif, Sans-serif, Cursive, Monospace, Fantasy_
 
 **Font Families** these are specific groups of sources that belong to a generic family. Like for example: _Em Serif -> Times New Roman, Georgia, etc._
+
+## Section 12: Changing the Line Height
+
+Line-height is a property used in CSS to control the vertical space between lines of text in an element. It defines the space between the top and bottom of the text, acting as a sort of "height" for each line within a text box.
+
+Line height is usually proportional to font size. For example, if your font size is 20px and your line height is set to "2", the final height will be 40px (20px x 2).
+
+Different fonts can influence line height behavior even if the font size is the same. This is because each font family has specific characteristics, such as internal spacing.
+
+It is more reliable to use numbers instead of percentages to avoid unexpected behavior, especially on elements that inherit styles from others (such as from a parent element).
