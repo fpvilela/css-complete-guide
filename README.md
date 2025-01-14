@@ -484,3 +484,28 @@ Line height is usually proportional to font size. For example, if your font size
 Different fonts can influence line height behavior even if the font size is the same. This is because each font family has specific characteristics, such as internal spacing.
 
 It is more reliable to use numbers instead of percentages to avoid unexpected behavior, especially on elements that inherit styles from others (such as from a parent element).
+
+## Section 12: Loading Performance & "font-display"
+
+When we use custom fonts on our website, the browser needs to download them before it can display them. During this time, there are different ways to handle the text that is waiting for the font to load. This is controlled by something called the "font-display" property. Here are the main options and how they work:
+
+1) **swap:**
+- The text appears immediately in a default (fallback) font.
+- When the custom font loads, it automatically switches to the new font, no matter how long it takes.
+
+2) **block:**
+- The text doesn't appear for a short period ("blocking" time).
+- Then it appears in a default font until the custom font loads.
+- It switches to the custom font when it's ready, even if it takes a while.
+
+3) **fallback:**
+- The text does not appear for a very short time.
+- Then, it appears with a default font.
+- The change to the custom font only happens if it loads very quickly. Otherwise, the website continues with the default font.
+
+4) **optional:**
+- The browser decides whether or not to load the custom font based on the quality of the internet connection.
+- If the internet connection is good, it tries to load it. If it is bad, it just uses the default font.
+
+5) **auto:**
+- The browser decides on its own how to handle fonts (it usually uses the block behavior).

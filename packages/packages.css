@@ -64,8 +64,7 @@ main {
     border: 1px solid #0e4f1f;
     color: #0e4f1f;
     background: white;
-    font: 700 1.2rem "AnonymousPro", sans-serif;
-    /* font: status-bar; */
+    font:1.2rem;
     /* font-style font-variant font-weight font-size/line-hight font-family */
 }
 
