@@ -515,3 +515,21 @@ When we use custom fonts on our website, the browser needs to download them befo
 - Web Safe Fonts: https://www.cssfontstack.com/
 - Google Fonts: https://fonts.google.com/
 - The "line-height" property: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
+
+## Section 13: Understanding Flexbox
+
+Flexbox is a CSS tool that helps you arrange elements on the screen. With Flexbox, you can easily control how the items inside the container are arranged: aligned in a row, stacked in a column, centered, with specific spacing, etc.
+
+When we apply display: flex; to an element, it becomes a **flex container**.
+The elements inside it become **flex items**.
+
+- **Properties for the container (parent):**
+    - flex-flow;
+    - justify-content;
+    - align-content;
+    - align-items
+
+- **Properties for items (children):** 
+    - order;
+    - flex;
+    - align-self
