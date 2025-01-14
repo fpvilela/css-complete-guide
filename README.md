@@ -509,3 +509,9 @@ When we use custom fonts on our website, the browser needs to download them befo
 
 5) **auto:**
 - The browser decides on its own how to handle fonts (it usually uses the block behavior).
+
+## Section 12: Useful Resources & Link
+
+- Web Safe Fonts: https://www.cssfontstack.com/
+- Google Fonts: https://fonts.google.com/
+- The "line-height" property: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
