@@ -533,3 +533,41 @@ The elements inside it become **flex items**.
     - order;
     - flex;
     - align-self
+
+## Section 13: Understanding the Importance of Main Axis & Cross Axiss
+
+**1. What are axes in Flexbox?**
+
+- **Main axis:** This is the axis where flex items are aligned. It depends on the flex direction:
+    - **Row:** This goes from left to right (or right to left with row-reverse).
+    - **Column:** This goes from top to bottom (or bottom to top with column-reverse).
+-   Cross axis: This is the axis perpendicular to the main axis:
+    - If the main axis is a row (horizontal), the cross axis is vertical.
+    - If the main axis is a column (vertical), the cross axis is horizontal.
+
+**2. How does flex-direction affect axes?**
+
+- **Row:**
+    - Main axis: Left to right.
+    - Cross axis: Up to down.
+- **Row-reverse:**
+    - Main axis: Right to left.
+    - Cross axis: Up to down.
+- **Column:**
+    - Main axis: Up to down.
+    - Cross axis: Left to right.
+- **Column-reverse:**
+    - Main axis: Down to up.
+    - Cross axis: Left to right.
+
+**3. Start point and end point**
+
+The **starting point** changes depending on the direction:
+
+- **Row:** Starts in the top left corner (or top right with row-reverse).
+- **Column:** Starts in the top left corner (or bottom left with column-reverse).
+
+**4. Item wrapping (flex-wrap)**
+
+When there is not enough space:
+- Items "wrap" to the next row or column on the cross-axis.
