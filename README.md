@@ -571,3 +571,14 @@ The **starting point** changes depending on the direction:
 
 When there is not enough space:
 - Items "wrap" to the next row or column on the cross-axis.
+
+## Section 13: Working with "align-items" & "justify-content"
+
+- **flex-direction:** row _(main axis is horizontal)_
+    - **justify-content**: defines the positioning of flexible elements along the main axis (horizontal).
+    - **align-items**: defines the positioning of flexible elements along the transverse axis (vertical).
+- **flex-direction**: column _(main axis is vertical)_
+    - **justify-content**: defines the positioning of flexible elements along the main axis (now vertical).
+    - **align-items**: defines the positioning of flexible elements along the transverse axis (now horizontal).
+
+_**Reusme:** Justify content refers to the main axis, and align items refer to the cross axis._
