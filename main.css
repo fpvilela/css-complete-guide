@@ -52,7 +52,6 @@ body {
     border: 5px solid black;
     margin: 10px;
     height: 250px;
-    align-self: self-start;
 }
 
 .item-4 {
@@ -72,6 +71,7 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
+    flex-grow: 1;
 }
 
 .item-6 {
@@ -81,4 +81,5 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
+    flex-grow: 2;   
 }
