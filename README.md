@@ -582,3 +582,11 @@ When there is not enough space:
     - **align-items**: defines the positioning of flexible elements along the transverse axis (now horizontal).
 
 _**Reusme:** Justify content refers to the main axis, and align items refer to the cross axis._
+
+## Section 13: Useful Resources & Link
+
+- Flexbox and browser compatibility: https://caniuse.com/#search=flexbox
+
+- The theory behind flexbox: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/
+
+- The flex container: https://developer.mozilla.org/en-US/docs/Glossary/Flex_Container
