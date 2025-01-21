@@ -71,7 +71,7 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
-    flex-shrink: 1;
+    flex: 0 1 10%;
 }
 
 .item-6 {
@@ -81,5 +81,5 @@ body {
     border: 5px solid black;
     margin: 10px;
     width: 350px;
-    flex-shrink: 4;   
+    flex-shrink: 0;
 }
