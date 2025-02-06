@@ -590,3 +590,9 @@ _**Reusme:** Justify content refers to the main axis, and align items refer to t
 - The theory behind flexbox: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/
 
 - The flex container: https://developer.mozilla.org/en-US/docs/Glossary/Flex_Container
+
+## Section 14: Using the Grid on our Project
+
+Elements that are out of the document flow, such as those with position: absolute or position: fixed, are not considered in the CSS Grid layout. This happens because Grid organizes the direct children of the grid container within its rows and columns, but absolutely or fixed-positioned elements are removed from this normal positioning flow.
+
+However, it's important to note that an absolutely positioned element can be placed relative to a grid item if the grid container has position: relative or another positioning value that makes it a reference context for the absolute element.
