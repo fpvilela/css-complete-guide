@@ -596,3 +596,7 @@ _**Reusme:** Justify content refers to the main axis, and align items refer to t
 Elements that are out of the document flow, such as those with position: absolute or position: fixed, are not considered in the CSS Grid layout. This happens because Grid organizes the direct children of the grid container within its rows and columns, but absolutely or fixed-positioned elements are removed from this normal positioning flow.
 
 However, it's important to note that an absolutely positioned element can be placed relative to a grid item if the grid container has position: relative or another positioning value that makes it a reference context for the absolute element.
+
+## Section 14: Working with "fit-content"
+
+The function `fit-content()` in CSS Grid is used to define the size of the columns or rows so that they fit the content, respecting a specified maximum limit.
