@@ -608,3 +608,25 @@ The function `fit-content()` in CSS Grid is used to define the size of the colum
 - Although flex-wrap can create multiple lines/columns in Flexbox, positioning items relative to each other is more difficult compared to Grid.
 - Grid is better for complex layouts, such as forms, while Flexbox works well for lists of items arranged in a single direction (e.g., side-by-side cards).
 - The general rule: Use Flexbox for one-dimensional layouts and Grid for two-dimensional layouts.
+
+## Section 14: Wrap Up
+
+- Creating a Grid:
+    - `display: grid`creates a grid where child elements are automatically placed in rows.
+    - The default can be  overwritten with `grid-auto-flow` (and then also `grid-auto-rows` or `grid-auto-columns`).
+    - Use `grid-gap` to add gaps between columns and rows.
+
+- Defining the Grid Structure
+    - You define columns and/or rows explictly via `grid-template-columns/`grid-template-rows`.
+    - Use repeat (`times`, `size`) to create multiple columns and rows with ease.
+    - Use `auto-fill`/`auto-fit` to derive the number of columns automatically.
+    - Use `minmax` for dynamic sizing.
+
+- Placing Elements
+    - Position elements in the grid via `grid-row` and/or `grid-column`.
+    - Use `span x` to span an element over multiple columns or rows.
+    - Use line numbers, line names or named areas.
+
+- Align Elements
+    - Align grid item via `justify-items` (X-axis) and `align-items` (Y-axis).
+    - Align the entire grid content via `justify-content` (X-axis) and `align-content` (Y-axis).
