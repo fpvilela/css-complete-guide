@@ -600,3 +600,11 @@ However, it's important to note that an absolutely positioned element can be pla
 ## Section 14: Working with "fit-content"
 
 The function `fit-content()` in CSS Grid is used to define the size of the columns or rows so that they fit the content, respecting a specified maximum limit.
+
+## Section 14: Comparing Grid & Flexbox
+
+- Grid is two-dimensional, ideal for layouts with rows and columns.
+- Flexbox is one-dimensional, used to arrange items in a row or a column.
+- Although flex-wrap can create multiple lines/columns in Flexbox, positioning items relative to each other is more difficult compared to Grid.
+- Grid is better for complex layouts, such as forms, while Flexbox works well for lists of items arranged in a single direction (e.g., side-by-side cards).
+- The general rule: Use Flexbox for one-dimensional layouts and Grid for two-dimensional layouts.
