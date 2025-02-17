@@ -630,3 +630,9 @@ The function `fit-content()` in CSS Grid is used to define the size of the colum
 - Align Elements
     - Align grid item via `justify-items` (X-axis) and `align-items` (Y-axis).
     - Align the entire grid content via `justify-content` (X-axis) and `align-content` (Y-axis).
+
+## Section 14: Useful Resources & Links
+
+- A really great article series on the CSS Grid: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+
+- A complete guide to CSS Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
