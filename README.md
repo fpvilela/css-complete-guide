@@ -119,7 +119,7 @@ However, in some cases, we may want to change the behavior of the elements and p
 
 - absolute: Positions the element relative to its parent element with relative positioning (or to the root element, if no positioned parent is found).
 - relative: Positions the element relative to its original position, moving it within the document flow.
-= fixed: The element is positioned relative to the viewport, and remains fixed as the page scrolls.
+- fixed: The element is positioned relative to the viewport, and remains fixed as the page scrolls.
 
 - sticky: The element stays in one position when it reaches a certain scroll point, but it keeps moving until it reaches the top or bottom of the viewport.
 
