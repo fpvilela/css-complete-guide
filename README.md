@@ -636,3 +636,11 @@ The function `fit-content()` in CSS Grid is used to define the size of the colum
 - A really great article series on the CSS Grid: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 
 - A complete guide to CSS Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
+
+## Section 15: Using Rotate and Translate
+
+The best approach for visually moving an element is using the `translate` function within the `transform` property. The focus was on `translateX` and `translateY`, which allow shifting the element along the X and Y axes, respectively, using units like `rem`, `px`, `em`, or percentages. However, if the element is rotated, the X-axis will no longer be a standard horizontal line but rather a diagonal, affecting how the transformation behaves.
+
+Additionally, the element’s width was increased to center the text and create a badge-like effect. To finalize the positioning, `translateX` and `translateY` values were adjusted for the best fit. Any part exceeding the container’s boundaries was clipped using the `overflow: hidden` property.
+
+Using `translate` instead of `top` and `right` has the advantage of hardware acceleration, making movement smoother and more efficient, especially when combined with transformations like rotation.
