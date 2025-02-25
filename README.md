@@ -644,3 +644,9 @@ The best approach for visually moving an element is using the `translate` functi
 Additionally, the element’s width was increased to center the text and create a badge-like effect. To finalize the positioning, `translateX` and `translateY` values were adjusted for the best fit. Any part exceeding the container’s boundaries was clipped using the `overflow: hidden` property.
 
 Using `translate` instead of `top` and `right` has the advantage of hardware acceleration, making movement smoother and more efficient, especially when combined with transformations like rotation.
+
+## Section 15: Useful Resources & Links
+
+- CSS Transforms: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms
+
+- 3D Transforms: https://desandro.github.io/3dtransforms/
