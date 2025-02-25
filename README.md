@@ -650,3 +650,29 @@ Using `translate` instead of `top` and `right` has the advantage of hardware acc
 - CSS Transforms: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms
 
 - 3D Transforms: https://desandro.github.io/3dtransforms/
+
+## Section 16: CSS "transition" Property Deep Dive
+
+The transition  property is used as see in the previous video:
+
+`transition: WHAT DURATION DELAY TIMING-FUNCTION;`
+
+Example:
+
+`transition: opacity 200ms 1s ease-out;`
+
+_Can be translated to: "Animate any changes in the opacity  property (for the element to which the transition  property is applied) over a duration of 200ms. Start fast and end slow, also make sure to wait 1s before you start"._
+
+Em vez dessa abreviação, você também pode especificar as quatro propriedades individuais:
+
+1) transition-property  (https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property => transition-property: opacity; 
+
+2) transition-duration  (https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration) => transition-duration: 200ms; 
+
+3) transition-timing-function  (https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function) => transition-timing-function: ease-out; 
+
+Possible timing function values are: ease-out , ease-in , linear , cubic-bezier()  and a couple of others. See the above link as well as the next lecture for more details.
+
+4) transition-delay  (https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay) => transition-delay: 1s; 
+
+You can read the official MDN article on CSS transitions here: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
