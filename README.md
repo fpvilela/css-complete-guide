@@ -676,3 +676,9 @@ Possible timing function values are: ease-out , ease-in , linear , cubic-bezier(
 4) transition-delay  (https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay) => transition-delay: 1s; 
 
 You can read the official MDN article on CSS transitions here: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+
+## Section 16: Working with Timing Functions
+
+We can think of the time or phase of the transition as a function.
+
+Site to find timing values ​​or functions: https://easings.net/
