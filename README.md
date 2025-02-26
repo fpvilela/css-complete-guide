@@ -716,3 +716,11 @@ Possible timing function values are: `ease-out` , `ease-in` , `linear` , `cubic-
 8) `animation-play-state`  (https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state) => `animation-play-state: running`; 
 
 You can read the official MDN article on CSS animations here: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+
+## Section 16: Useful Resources & Links
+
+- CSS Transitions: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions
+
+- CSS Animations: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+
+- List of "transitionable" Properties: https://www.w3.org/TR/css-transitions-1/#animatable-properties
