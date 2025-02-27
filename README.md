@@ -765,3 +765,17 @@ Tip: A common practice is to maintain two versions of your CSS:
 
 One without prefixes for development
 One with prefixes (e.g., `shared-prod.css`) for production.
+
+## Section 17: Detecting Browser Support with @supports
+
+We’ve already covered **vendor prefixes**, but sometimes they aren’t enough.
+
+- Some browsers may **not support a feature at all**, even with prefixes.
+- In these cases, we can use the **@supports rule**.
+
+The `@supports` syntax is similar to a **media query** (`@media`), but instead of checking screen size, we check **if a browser supports a specific CSS property**.
+
+- `@supports` checks if a browser supports a **specific feature**.
+- If supported, **the styles inside @supports are applied**.
+- If not supported, **they are ignored**, but a fallback layout ensures functionality.
+- Podemos usar `AND`, `OR` e `NOT` para criar consultas mais avançadas.
