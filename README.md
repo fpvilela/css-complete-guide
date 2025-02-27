@@ -724,3 +724,25 @@ You can read the official MDN article on CSS animations here: https://developer.
 - CSS Animations: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
 
 - List of "transitionable" Properties: https://www.w3.org/TR/css-transitions-1/#animatable-properties
+
+## Section 17: Understanding & Using Vendor Prefixes
+
+When working with CSS, one of the challenges we face is **differences in browser support**.
+
+Browsers develop new features at different speeds. This means that when a feature is still being standardized, each browser may:
+- **Not have implemented the feature yet**
+- **Have implemented only part of the feature**
+- **Have implemented it differently from other browsers**
+
+Vendor prefixes were created to allow browsers to add support for a new feature **before** it becomes an official standard, without the risk of breaking websites once the final standard is released.
+
+Browsers read CSS from top to bottom. So, we place the older versions first and the final, unprefixed value at the bottom.
+This way, a modern browser that understands `display: flex`; will use it and ignore the older prefixes. Meanwhile, an older browser that doesn't understand `display: flex`; will still recognize one of the prefixed versions and apply it.
+If we do the opposite—placing `display: flex`; before the prefixed versions—an older browser won't understand it and will simply ignore the rule.
+
+If browsers implemented `flex` before the standard was finalized, there would be a risk that changes in the specification could break websites that were already using the initial version.
+
+With prefixes, browsers can:
+- Test new features before standardization
+- Ensure that if the standard changes, websites using the old version continue working
+- Maintain compatibility with older versions without breaking the user experience
