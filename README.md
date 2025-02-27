@@ -746,3 +746,22 @@ With prefixes, browsers can:
 - Test new features before standardization
 - Ensure that if the standard changes, websites using the old version continue working
 - Maintain compatibility with older versions without breaking the user experience
+
+## Section 17: Which Prefixes Should You Use?
+
+There is a website called "**CSS Prefixes**", which provides an overview of the necessary prefixes for different CSS properties. Additionally, it contains links to **Can I Use**, a crucial tool for checking browser support for certain features.
+
+This page is an excellent resource for getting a quick **overview** of which **features require prefixes** and **which syntax to use**.
+
+However, **checking each feature manually and adding prefixes to your code can be time-consuming**.
+
+To make this process easier, there is a tool called Autoprefixer.
+
+- You can search "**Autoprefixer**" on Google, and you’ll find the project's page on GitHub.
+- **Autoprefixer** scans your CSS code, identifies which properties need prefixes, and adds them automatically.
+- You can **specify which browsers you want to support**, and based on that list, it adds the necessary prefixes.
+
+Tip: A common practice is to maintain two versions of your CSS:
+
+One without prefixes for development
+One with prefixes (e.g., `shared-prod.css`) for production.
