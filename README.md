@@ -779,3 +779,18 @@ The `@supports` syntax is similar to a **media query** (`@media`), but instead o
 - If supported, **the styles inside @supports are applied**.
 - If not supported, **they are ignored**, but a fallback layout ensures functionality.
 - Podemos usar `AND`, `OR` e `NOT` para criar consultas mais avançadas.
+
+## Section 17: How to Name CSS Classes
+
+**BEM (Block-Element-Modifier)** ​​is a naming standard that makes it easier to organize classes in large projects.
+
+- **Bloco:** Nome principal do componente
+- **Elemento:** Parte específica do componente
+- **Modificador:** Variação do elemento
+
+Exemplos:
+
+```css
+.main-menu__item { ... }  /* Elemento dentro do bloco main-menu */
+.main-menu__item--size-big { ... }  /* Modificador para um item grande */
+```
