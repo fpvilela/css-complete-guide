@@ -812,3 +812,9 @@ Exemplos:
 - An introduction to Bootstrap 4: https://academind.com/learn/css/bootstrap-4-tutorial/
 
 - CSS Polyfills: https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills
+
+## Section 18: Introducing Sass (Syntactically Awesome Style Sheets)
+
+SASS (Syntactically Awesome Style Sheets) is a tool that extends CSS but does not replace the CSS knowledge you already have. It makes it easier to write more organized, reusable, and maintainable code. SASS is not executed directly in the browser; instead, the code written in SASS needs to be compiled into CSS before it can be used in production.
+
+The main idea of SASS is to allow the developer to write code more efficiently during development, with features like nesting CSS rules, inheriting from other rules, using helper functions (like adjusting colors), mixins (reusable code snippets), and variables to store repeated values, such as colors. Additionally, SASS allows splitting the code into smaller files (partials) and using conditions and loops for greater flexibility.
